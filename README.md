@@ -2,7 +2,7 @@ SCSampleApp
 ===========
 
 Security Check sample application that incorporates the Security Check control library.
-
+Validated working on iOS6 and iOS7.
 
 Contributing
 ============
