@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1B1A67189AA4DF00577113 /* libSecurityCheck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1B1A61189AA40100577113 /* libSecurityCheck.a */; };
+		FE70AEB0189AD85D00F387EC /* iMAS_SC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE70AEAF189AD85D00F387EC /* iMAS_SC.m */; };
 		FE87D1E1189A9F4100E954D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87D1E0189A9F4100E954D9 /* Foundation.framework */; };
 		FE87D1E3189A9F4100E954D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87D1E2189A9F4100E954D9 /* CoreGraphics.framework */; };
 		FE87D1E5189A9F4100E954D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87D1E4189A9F4100E954D9 /* UIKit.framework */; };
@@ -25,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FE1B1A60189AA40100577113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1B1A5C189AA40100577113 /* SecurityCheck.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 48965CF016F2044E00B14F8A;
+			remoteInfo = SecurityCheck;
+		};
+		FE1B1A62189AA42400577113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1B1A5C189AA40100577113 /* SecurityCheck.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 48965CEF16F2044E00B14F8A;
+			remoteInfo = SecurityCheck;
+		};
 		FE87D206189A9F4100E954D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE87D1D5189A9F4100E954D9 /* Project object */;
@@ -35,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE1B1A5C189AA40100577113 /* SecurityCheck.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecurityCheck.xcodeproj; path = "vendor/security-check/SecurityCheck.xcodeproj"; sourceTree = "<group>"; };
+		FE70AEAE189AD85D00F387EC /* iMAS_SC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMAS_SC.h; sourceTree = "<group>"; };
+		FE70AEAF189AD85D00F387EC /* iMAS_SC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iMAS_SC.m; sourceTree = "<group>"; };
 		FE87D1DD189A9F4100E954D9 /* SCSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE87D1E0189A9F4100E954D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE87D1E2189A9F4100E954D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1B1A67189AA4DF00577113 /* libSecurityCheck.a in Frameworks */,
 				FE87D1E3189A9F4100E954D9 /* CoreGraphics.framework in Frameworks */,
 				FE87D1E5189A9F4100E954D9 /* UIKit.framework in Frameworks */,
 				FE87D1E1189A9F4100E954D9 /* Foundation.framework in Frameworks */,
@@ -81,9 +101,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE1B1A5D189AA40100577113 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE1B1A61189AA40100577113 /* libSecurityCheck.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FE87D1D4189A9F4100E954D9 = {
 			isa = PBXGroup;
 			children = (
+				FE1B1A5C189AA40100577113 /* SecurityCheck.xcodeproj */,
 				FE87D1E6189A9F4100E954D9 /* SCSampleApp */,
 				FE87D208189A9F4100E954D9 /* SCSampleAppTests */,
 				FE87D1DF189A9F4100E954D9 /* Frameworks */,
@@ -115,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				FE87D1EF189A9F4100E954D9 /* iMASAppDelegate.h */,
+				FE70AEAE189AD85D00F387EC /* iMAS_SC.h */,
+				FE70AEAF189AD85D00F387EC /* iMAS_SC.m */,
 				FE87D1F0189A9F4100E954D9 /* iMASAppDelegate.m */,
 				FE87D1F2189A9F4100E954D9 /* Main_iPhone.storyboard */,
 				FE87D1F5189A9F4100E954D9 /* Main_iPad.storyboard */,
@@ -169,6 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FE1B1A63189AA42400577113 /* PBXTargetDependency */,
 			);
 			name = SCSampleApp;
 			productName = SCSampleApp;
@@ -203,6 +235,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Gregg Ganley";
 				TargetAttributes = {
+					FE87D1DC189A9F4100E954D9 = {
+						DevelopmentTeam = M9BLEU3LFV;
+					};
 					FE87D200189A9F4100E954D9 = {
 						TestTargetID = FE87D1DC189A9F4100E954D9;
 					};
@@ -219,6 +254,12 @@
 			mainGroup = FE87D1D4189A9F4100E954D9;
 			productRefGroup = FE87D1DE189A9F4100E954D9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FE1B1A5D189AA40100577113 /* Products */;
+					ProjectRef = FE1B1A5C189AA40100577113 /* SecurityCheck.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FE87D1DC189A9F4100E954D9 /* SCSampleApp */,
@@ -226,6 +267,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FE1B1A61189AA40100577113 /* libSecurityCheck.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSecurityCheck.a;
+			remoteRef = FE1B1A60189AA40100577113 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FE87D1DB189A9F4100E954D9 /* Resources */ = {
@@ -257,6 +308,7 @@
 				FE87D1FA189A9F4100E954D9 /* iMASViewController.m in Sources */,
 				FE87D1F1189A9F4100E954D9 /* iMASAppDelegate.m in Sources */,
 				FE87D1ED189A9F4100E954D9 /* main.m in Sources */,
+				FE70AEB0189AD85D00F387EC /* iMAS_SC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +323,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FE1B1A63189AA42400577113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecurityCheck;
+			targetProxy = FE1B1A62189AA42400577113 /* PBXContainerItemProxy */;
+		};
 		FE87D207189A9F4100E954D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE87D1DC189A9F4100E954D9 /* SCSampleApp */;
@@ -393,10 +450,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCSampleApp/SCSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SCSampleApp/SCSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +468,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCSampleApp/SCSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SCSampleApp/SCSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -475,6 +542,7 @@
 				FE87D214189A9F4100E954D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE87D215189A9F4100E954D9 /* Build configuration list for PBXNativeTarget "SCSampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +551,7 @@
 				FE87D217189A9F4100E954D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

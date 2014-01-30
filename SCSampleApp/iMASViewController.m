@@ -9,6 +9,7 @@
 #import "iMASViewController.h"
 
 @interface iMASViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *info;
 
 @end
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.info.text = @"Test";
 }
 
 - (void)didReceiveMemoryWarning

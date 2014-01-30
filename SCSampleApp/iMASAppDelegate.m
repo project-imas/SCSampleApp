@@ -7,12 +7,17 @@
 //
 
 #import "iMASAppDelegate.h"
+#import "iMAS_SC.h"
 
 @implementation iMASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [iMAS_SC jbCheck];
+    [iMAS_SC dbgCheck];
+    
     return YES;
 }
 							
